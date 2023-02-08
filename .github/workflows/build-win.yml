@@ -64,7 +64,7 @@ jobs:
           ${{ github.workspace }}\cmake-3.22.2-windows-x86_64\bin;^
           %PATH%
           set CD_LINUX=%CD:\=/%
-          cd mpg123\ports\cmake &&
+          cd mpg123\ports\cmake &&^
           cmake.exe -G "${{ matrix.msvc_version }}" ^
           -DCMAKE_BUILD_TYPE=Release ^
           -DBUILD_SHARED_LIBS=OFF ^
